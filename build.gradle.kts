@@ -33,6 +33,8 @@ dependencies {
     runtimeOnly("ch.qos.logback:logback-classic")
     implementation("io.micronaut:micronaut-validation")
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation ("com.datastax.oss:java-driver-core:4.11.0")
+    implementation("io.micronaut.cassandra:micronaut-cassandra")
 }
 
 
