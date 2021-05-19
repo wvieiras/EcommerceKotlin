@@ -21,4 +21,14 @@ class ServiceUserImpl(private val session: CqlSession): ServiceUser {
         return userCreated
 
     }
+
+    override fun getAll(): List<User> {
+        var results = session.execute("SELECT * from ecommerce.User")
+        val res = results.map {
+            User(
+                it.getUuid("id"), it.getString("login"), it.getString("password")
+            )
+        }
+        return res.toList()
+    }
 }
