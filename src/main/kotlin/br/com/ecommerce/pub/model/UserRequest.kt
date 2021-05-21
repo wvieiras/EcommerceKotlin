@@ -1,5 +1,6 @@
-package user
+package br.com.ecommerce.pub.model
 
+import br.com.ecommerce.sub.model.User
 import io.micronaut.core.annotation.Introspected
 import java.util.*
 import javax.validation.constraints.Email
@@ -7,7 +8,7 @@ import javax.validation.constraints.NotBlank
 import javax.validation.constraints.Size
 
 @Introspected
-data class NewUserRequest (
+data class UserRequest (
 
     @field:Email
     @field:NotBlank

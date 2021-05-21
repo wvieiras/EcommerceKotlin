@@ -35,6 +35,9 @@ dependencies {
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation ("com.datastax.oss:java-driver-core:4.11.0")
     implementation("io.micronaut.cassandra:micronaut-cassandra")
+    implementation("io.micronaut.nats:micronaut-nats")
+
+
 }
 
 

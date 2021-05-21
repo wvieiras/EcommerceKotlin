@@ -1,5 +1,6 @@
-package user
+package br.com.ecommerce.sub.service
 
+import br.com.ecommerce.sub.model.User
 import javax.inject.Singleton
 
 @Singleton

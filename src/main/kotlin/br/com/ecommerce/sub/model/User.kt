@@ -1,4 +1,4 @@
-package user
+package br.com.ecommerce.sub.model
 
 import io.micronaut.core.annotation.Introspected
 import java.util.*
